@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('load-all');
+  this.route('load-all-with-includes');
 });
 
 export default Router;

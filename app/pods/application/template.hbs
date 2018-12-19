@@ -1,20 +1,15 @@
-
 <div class="my-4 mx-4">
   <h1>
     Storefront Sandbox
   </h1>
 
-  {{#each model as |post|}}
-    <div class="mt-3">
-      <h3>
-        {{post.title}}
-      </h3>
-      <div class="mt-1">
-        This post has {{post.comments.length}} comments.
-      </div>
+  <div class="flex items-center mb-4">
+    <div class="mr-3">
+      {{link-to "Load all" "load-all"}}
     </div>
-  {{/each}}
 
+    {{link-to "Load all with includes" "load-all-with-includes"}}
+  </div>
 
   {{outlet}}
 </div>
