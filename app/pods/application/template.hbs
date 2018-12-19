@@ -2,4 +2,11 @@
   Storefront Sandbox
 </h1>
 
+{{#each model as |post|}}
+  <h3>
+    {{post.title}}
+  </h3>
+{{/each}}
+
+
 {{outlet}}
