@@ -1,3 +1,7 @@
 export default function(server) {
-  server.createList('post', 10);
+  let posts = server.createList('post', 10);
+
+  posts.forEach((post, i) => {
+    server.createList('comment', i, { post });
+  });
 }
